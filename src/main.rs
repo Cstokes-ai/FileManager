@@ -1,5 +1,5 @@
-mod Filewrite;
-mod FileRead;
+mod file_write;
+mod file_read;
 mod FileDelete;
 mod make_directory;
 
@@ -25,12 +25,12 @@ fn main() {
             }
         }
         2 => {
-            if let Err(e) = Filewrite::write_to_file() {
+            if let Err(e) = file_write::write_to_file() {
                 eprintln!("Error writing to file: {}", e);
             }
         }
         3 => {
-            if let Err(e) = FileRead::read_from_file() {
+            if let Err(e) = file_read::read_from_file() {
                 eprintln!("Error reading from file: {}", e);
             }
         }

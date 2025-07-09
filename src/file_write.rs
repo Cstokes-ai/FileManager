@@ -2,13 +2,13 @@
 
 use std::io::{self, Write};
 use std::path::Path;
-mod fileRead;
+mod file_read;
 
 use std::fs::File;
 use std::io::Write;
 
 pub fn searchforFile() {
-    fileReading::searchforFile();
+    fileRead::searchforFile();
 
 }
 pub fn write_to_file() -> io::Result<()> {
